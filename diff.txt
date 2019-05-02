@@ -1,0 +1,10 @@
+
+In line number 98 of your output:
+The output should be:
+[056789] GPU              - FILLED
+But your output is: 
+[567890] GPU              - FILLED
+ ^
+-|
+Professor's character ASCII code: hex(30), dec(48)
+un-matched character ASCII code: hex(35), dec(53)

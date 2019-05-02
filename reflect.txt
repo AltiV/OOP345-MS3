@@ -1,0 +1,46 @@
+// Name:				Alan Vuong
+// Seneca Student ID:	149004178
+// Seneca email:		avuong19@myseneca.ca
+// Date of completion:	Saturday, December 1st, 2018
+
+Project Reflection
+
+I have (briefly) learned the following:
+
+- Heavier usage of containers, iterators, and algorithms, along with corresponding lambda functions with variable capture
+- Usage of inheritance to add extra functionality on top of basic parent objects
+- The interweaving of multiple classes, all calling upon each other with different functions and utilizing references and pointers to directly act upon their variables
+
+I found the instructions given for Milestone 3 in particular extremely frustrating to go through. I don't really understand the concept of having a concatenated Inventory file, as well as a separate AssemblyLine file have two conflicting sets of orders to run through, and then having to run through an assembly line in order of one but, out of order in another. Thus there would be pointers going all over the place, and on top of all the weaving functions in-between classes, along with talking about assembly line stuff in the Task class while having an ACTUAL assembly line vector in the LineManager class confused me even more.
+
+It would probably be very useful for future classes (assuming this project is utilized again) to, at minimum, have some sort of diagram of LineManager's bool run(std::ostream&) function, running through all its iterations based on the provided files. It took me far, far too long to understand why things were sorted the way they were in the "Filling Orders" section.
+
+For example:
+
+--------------------------------------------------
+Filled Elliott C., Gaming PC[Power Supply]
+--------------------------------------------------
+Filled Elliott C., Gaming PC[CPU]
+Filled Chris S., Laptop[Power Supply]
+--------------------------------------------------
+Filled Chris S., Laptop[CPU]
+Filled Elliott C., Gaming PC[GPU]
+Filled Elliott C., Gaming PC[GPU]
+Filled Elliott C., Gaming PC[GPU]
+Filled Mary-Lynn M., Desktop PC[Power Supply]
+--------------------------------------------------
+Filled Mary-Lynn M., Desktop PC[CPU]
+Filled Elliott C., Gaming PC[Memory]
+Filled Chris T., Micro Controller[Power Supply]
+--------------------------------------------------
+Filled Chris S., Laptop[Memory]
+Filled Elliott C., Gaming PC[SSD]
+--------------------------------------------------
+Filled Mary-Lynn M., Desktop PC[Memory]
+Filled Chris T., Micro Controller[GPU]
+Filled Chris T., Micro Controller[GPU]
+Filled Chris S., Laptop[SSD]
+--------------------------------------------------
+--------------------------------------------------
+Filled Chris T., Micro Controller[SSD]
+--------------------------------------------------
